@@ -17,8 +17,23 @@ members:
   - io.projectreactor.rabbitmq:reactor-rabbitmq@1.5.6
   - io.projectreactor.kotlin:reactor-kotlin-extensions@1.1.11
 repositories:
+  patch-reactor-core:
+    - io.projectreactor:reactor-core
+    - io.projectreactor:reactor-test
+    - io.projectreactor:reactor-tools
+  patch-reactor-addons:
+    - io.projectreactor.addons:reactor-extra
+    - io.projectreactor.addons:reactor-adapter
   patch-reactor-netty:
     - io.projectreactor.netty:reactor-netty
     - io.projectreactor.netty:reactor-netty-core
     - io.projectreactor.netty:reactor-netty-http
     - io.projectreactor.netty:reactor-netty-http-brave
+  patch-reactor-pool:
+    - io.projectreactor.addons:reactor-pool
+  patch-reactor-kafka:
+    - io.projectreactor.kafka:reactor-kafka
+  patch-reactor-rabbitmq:
+    - io.projectreactor.rabbitmq:reactor-rabbitmq
+  patch-reactor-kotlin-extensions:
+    - io.projectreactor.kotlin:reactor-kotlin-extensions
